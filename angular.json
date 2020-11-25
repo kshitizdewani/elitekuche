@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "eliteKuche"
+    }
+  },
+  "defaultProject": "eliteKuche",
+  "cli": {
+    "analytics": false
+  }
 }
