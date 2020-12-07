@@ -1,10 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import {HomeComponent} from './components/home/home.component';
+import {HomeSpaceComponent} from './components/home-space/home-space.component';
+import {DesignersDeskComponent} from './components/designers-desk/designers-desk.component';
+import {ShowcaseComponent} from './components/showcase/showcase.component';
+import {ContactComponent} from './components/contact/contact.component';
 
 const routes: Routes = [
-  { path:  '', component:  HomeComponent},
-  // { path:  'home', component:  HomeComponent},
+  { path: '', component:  HomeComponent},
+  { path: 'home-space', component:  HomeSpaceComponent},
+  { path: 'designers-desk', component: DesignersDeskComponent},
+  { path: 'showcase', component: ShowcaseComponent},
+  {path:  'contact',  component: ContactComponent},
 
 ];
 

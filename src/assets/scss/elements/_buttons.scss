@@ -65,8 +65,8 @@
 	0 0 0 rgba(0, 0, 0, 0.05),
 	0 0 0 rgba(0, 0, 0, 0.05),
 	0 0 0 rgba(0, 0, 0, 0.05);
-	
-	
+
+
 	> span,
 	strong,
 	i {
@@ -80,11 +80,11 @@
 		flex-flow: row wrap;
 		align-items: center;
 	}
-	
+
 	&.text-uppercase {
 		letter-spacing: .1em;
 	}
-	
+
 	&.semi-round {
 		border-radius: 2px;
 	}
@@ -94,17 +94,17 @@
 	&.circle {
 		border-radius: 50em;
 	}
-	
+
 	&.disabled {
 		pointer-events: none;
 		cursor: none;
-		
+
 		> span,
 		.btn-icon {
 			opacity: 0.5
 		}
 	}
-	
+
 	&.border-none {
 		border-width: 0;
 
@@ -112,10 +112,10 @@
 			margin: 0;
 		}
 		.btn-gradient-border rect {
-			stroke-width:0; 
+			stroke-width:0;
 		}
 	}
-	
+
 	&.border-thin {
 		border-width: 1px;
 
@@ -126,7 +126,7 @@
 			stroke-width: 1px;
 		}
 	}
-	
+
 	&.border-thick {
 		border-width: 2px;
 
@@ -137,7 +137,7 @@
 			stroke-width: 2px;
 		}
 	}
-	
+
 	&.border-thicker {
 		border-width: 3px;
 
@@ -148,19 +148,19 @@
 			stroke-width: 3px;
 		}
 	}
-	
+
 	+ .btn {
 		margin-left: .75em;
 	}
-	
+
 	&.wide {
-		
+
 		> span {
 			padding-left: 2.4em;
 			padding-right: 2.4em;
 		}
 	}
-	
+
 	&:hover {
 		border-color: transparent;
 		background-color: var(--color-primary);
@@ -180,13 +180,13 @@
 
 /* Sizes*/
 .btn-xsm {
-	
+
 	> span {
 		padding: 0.6em 1em;
 	}
-	
+
 	&.wide {
-		
+
 		> span {
 			padding-left: 1.7em;
 			padding-right: 1.7em;
@@ -194,13 +194,13 @@
 	}
 }
 .btn-sm {
-	
+
 	> span {
 		padding: 0.85em 1.5em;
 	}
-	
+
 	&.wide {
-		
+
 		> span {
 			padding-left: 3em;
 			padding-right: 3em;
@@ -208,12 +208,12 @@
 	}
 }
 .btn-lg {
-	
+
 	> span {
 		padding: 1.3em 2.7em;
 	}
 	&.wide {
-		
+
 		> span {
 			padding-left: 3.6em;
 			padding-right: 3.6em;
@@ -221,12 +221,12 @@
 	}
 }
 .btn-xlg {
-	
+
 	> span {
 		padding: 1.5em 3.5em;
 	}
 	&.wide {
-		
+
 		> span {
 			padding-left: 4.5em;
 			padding-right: 4.5em;
@@ -332,7 +332,7 @@
 	}
 }
 .btn-icon-circle {
-	
+
 	.btn-icon {
 		border-radius: 50em;
 	}
@@ -371,7 +371,7 @@
 
 /* Icon Position */
 .btn-icon-block {
-	
+
 	.btn-icon,
 	.btn-txt {
 		text-align: center;
@@ -389,13 +389,13 @@
 }
 .btn-icon-top,
 .btn-icon-left {
-	
+
 	.btn-icon {
 		order: -1;
 	}
 }
 .btn-icon-left {
-	
+
 	.btn-icon {
 		margin-left: 0;
 		margin-right: 8px;
@@ -478,7 +478,7 @@
 .btn-solid {
 	background: var(--color-primary);
 	color: #fff;
-	
+
 	&.color-secondary {
 		background-color: #4fda90;
 		border-color: #4fda90;
@@ -510,13 +510,13 @@
 
 .btn-naked {
 	border: none;
-	
+
 	> span {
 		padding: 0;
 	}
 
 	&:hover {
-		color: var(--color-primary);		
+		color: var(--color-primary);
 		-webkit-transform: translateX(0) !important;
 		transform: translateX(0) !important;
 		background-color: transparent !important;
@@ -545,7 +545,7 @@
 	> span > .btn-gradient-bg {
 		display: none;
 	}
-	
+
 	&.btn-icon-solid,
 	&.btn-icon-bordered {
 
@@ -560,7 +560,7 @@
 	border: none;
 	background-color: transparent !important;
 	position: relative;
-	
+
 	&:before,
 	&:after {
 		content: '';
@@ -581,42 +581,42 @@
 	> span {
 		padding: 0.4em 0;
 	}
-	
+
 	&:hover {
 		background-color: transparent;
 		color: var(--color-primary);
 		transform: none;
 		box-shadow: none;
-		
+
 		&:after {
 			transform-origin: left center;
 			transform: scaleX(1);
 		}
 	}
-	
+
 	&.border-none {
-		
+
 		&:before,
 		&:after {
 			height: 0;
 		}
 	}
 	&.border-thin {
-		
+
 		&:before,
 		&:after {
 			height: 1px;
 		}
 	}
 	&.border-thick {
-		
+
 		&:before,
 		&:after {
 			height: 2px;
 		}
 	}
 	&.border-thicker {
-		
+
 		&:before,
 		&:after {
 			height: 3px;
@@ -635,17 +635,18 @@
 }
 
 .btn-split {
-	
+
 	&,
 	&:hover {
 		border: none;
 		box-shadow: none;
 		background: none;
-		color: #ffa487;
-	}
+		//color: #ffa487;
+	  color: #c00024;
+  }
 
 	&:hover {
-		
+
 		.btn-split-bg {
 			animation: btnSplitHover 0.65s cubic-bezier(.25,1,.35,1) both;
 		}
@@ -655,7 +656,7 @@
 .btn-block {
 	width: 100%;
 	white-space: normal;
-	
+
 	> span {
 		width: 100%;
 		justify-content: center;
@@ -683,9 +684,9 @@
 	&:hover {
 
 		defs {
-		
+
 			stop {
-	
+
 				&:first-child {
 					stop-color: var(--color-gradient-start);
 				}
@@ -747,7 +748,7 @@
 	overflow: visible !important;
 
 	defs {
-		
+
 		stop {
 			transition: all 0.3s ease;
 			stop-opacity: 1;
@@ -775,7 +776,7 @@
 	position: relative;
 	text-align: center;
 	white-space: nowrap;
-	
+
 	span {
 		display: inline-block;
 	}
@@ -855,7 +856,7 @@
 	}
 	&.all-items-loaded {
 		color: #000;
-		
+
 		.all-loaded {
 			opacity: 1;
 			visibility: visible;
@@ -869,7 +870,7 @@
 	&.btn-bordered {
 		border-color: var(--color-secondary);
 		color: var(--color-secondary);
-		
+
 		&:hover {
 			background-color: var(--color-secondary);
 			color: #fff;
