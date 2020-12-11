@@ -1,6 +1,6 @@
 // Arrows
 @keyframes lqdStackArrowNext {
-	
+
 	0% {
 		transform: translate(0);
 		opacity: 1;
@@ -18,7 +18,7 @@
 	}
 }
 @keyframes lqdStackArrowPrev {
-	
+
 	0% {
 		transform: translate(0);
 		opacity: 1;
@@ -38,7 +38,7 @@
 
 // Page Numbers
 @keyframes lqdStackNumberActive {
-	
+
 	from {
 		transform: scale(0.5);
 		opacity: 0;
@@ -49,7 +49,7 @@
 	}
 }
 @keyframes lqdStackNumberPassed {
-	
+
 	from {
 		transform: scale(1);
 		opacity: 1;
@@ -60,7 +60,7 @@
 	}
 }
 @keyframes lqdStackNumberActiveUp {
-	
+
 	from {
 		transform: scale(1.5);
 		opacity: 0;
@@ -71,7 +71,7 @@
 	}
 }
 @keyframes lqdStackNumberPassedUp {
-	
+
 	from {
 		transform: scale(0.5);
 		opacity: 1;
@@ -82,7 +82,7 @@
 	}
 }
 @keyframes lqdStackArrowDash {
-	
+
 	from {
 		stroke-dasharray: 5;
 	}
@@ -94,7 +94,7 @@
 
 // FadeScale
 @keyframes lqdStackRowFadeScaleEnterFromBottom {
-	
+
 	from {
 		transform: translate3d(0, 100vh, 0);
 	}
@@ -103,7 +103,7 @@
 	}
 }
 @keyframes lqdStackRowFadeScaleEnter {
-	
+
 	from {
 		transform: scale3d(0.9, 0.9, 1);
 		opacity: 0;
@@ -114,7 +114,7 @@
 	}
 }
 @keyframes lqdStackRowFadeScaleLeave {
-	
+
 	from {
 		transform: scale3d(1, 1, 1);
 	}
@@ -124,7 +124,7 @@
 	}
 }
 @keyframes lqdStackRowFadeScaleLeaveToBottom {
-	
+
 	from {
 		transform: translate3d(0, 0, 0);
 	}
@@ -135,7 +135,7 @@
 
 // SlideOver
 @keyframes lqdStackRowSlideOverEnterFromTop {
-	
+
 	from {
 		transform: translate3d(0, -100vh, 0);
 	}
@@ -144,7 +144,7 @@
 	}
 }
 @keyframes lqdStackRowSlideOverEnterFromBottom {
-	
+
 	from {
 		transform: translate3d(0, 100vh, 0);
 	}
@@ -153,7 +153,7 @@
 	}
 }
 @keyframes lqdStackRowSlideOverLeaveToTop {
-	
+
 	from {
 		transform: translate3d(0, 0, 0);
 	}
@@ -162,7 +162,7 @@
 	}
 }
 @keyframes lqdStackRowSlideOverLeaveToBottom {
-	
+
 	from {
 		transform: translate3d(0, 0, 0);
 	}
@@ -170,7 +170,7 @@
 		transform: translate3d(0, 50vh, 0);
 	}
 }
-	
+
 .lqd-stack-page-number,
 .lqd-stack-prevnext-wrap,
 .lqd-stack-extra {
@@ -185,7 +185,7 @@
 	left: 0;
 	background-color: #fff;
 	transition: transform 1.15s cubic-bezier(0.22, 0.61, 0.36, 1);
-	
+
 	&:not(.active):not(.lqd-stack-row-entering):not(.lqd-stack-row-leaving) {
 		left: -999999px;
 		pointer-events: none;
@@ -254,7 +254,7 @@
 	text-transform: uppercase;
 	letter-spacing: 0.2em;
 	transform: translateY(-50%);
-	
+
 	.pp-tooltip {
 		display: inline-block;
 		margin-right: 15px;
@@ -278,7 +278,7 @@
 		flex-flow: row wrap;
 		align-items: center;
 		transform-origin: right center;
-		
+
 		&:before {
 			content: '';
 			display: inline-block;
@@ -303,7 +303,7 @@
 		align-items: center;
 		position: relative;
 		margin: 30px 0;
-		
+
 		&:first-child {
 			margin-top: 0;
 		}
@@ -311,13 +311,13 @@
 			margin-bottom: 0;
 		}
 		.lqd-stack-has-footer & {
-			
+
 			&:nth-last-child(2) {
 				margin-bottom: 0;
 			}
 		}
 		&:hover {
-			
+
 			a {
 				transform: scaleX(1.5);
 				background-color: #000;
@@ -350,7 +350,7 @@
 	background: none;
 	transform: translateY(-50%);
 	transition: color 0.3s;
-	
+
 	&:focus {
 		outline: none;
 	}
@@ -367,12 +367,12 @@
 	margin-left: 5px;
 }
 .lqd-stack-buttons-style-1 {
-	
+
 	.lqd-stack-prevnext-button {
 		font-size: 10px;
 		text-transform: uppercase;
 		letter-spacing: 0.1em;
-		
+
 		svg {
 			display: none;
 		}
@@ -383,7 +383,7 @@
 	.lqd-stack-button-ext {
 		display: flex;
 		align-items: center;
-		
+
 		&:before {
 			display: inline-block;
 			font: normal normal 2em 'liquid-icon';
@@ -391,17 +391,17 @@
 	}
 	.lqd-stack-prev-button {
 		flex-direction: row-reverse;
-		
+
 		.lqd-stack-button-ext {
 			margin-right: 10px;
-			
+
 			&:before {
 				content: '\f117';
 			}
 		}
-		
+
 		&:hover {
-			
+
 			.lqd-stack-button-labbel {
 				transform: translateX(-2px);
 			}
@@ -411,17 +411,17 @@
 		}
 	}
 	.lqd-stack-next-button {
-		
+
 		.lqd-stack-button-ext {
 			margin-left: 10px;
-			
+
 			&:before {
 				content: '\f119';
 			}
 		}
-		
+
 		&:hover {
-			
+
 			.lqd-stack-button-labbel {
 				transform: translateX(2px);
 			}
@@ -432,7 +432,7 @@
 	}
 }
 .lqd-stack-buttons-style-2 {
-	
+
 	.lqd-stack-button-labbel {
 		clip: rect(1px, 1px, 1px, 1px);
 		height: 1px;
@@ -468,34 +468,34 @@
 		transform: translate(-50%, -50%);
 	}
 	.lqd-stack-prevnext-button {
-		
+
 		&:hover {
-			
+
 			.lqd-stack-button-arrow {
 				animation: lqdStackArrowDash 1s ease both alternate;
 			}
 		}
 	}
 	.lqd-stack-prev-button {
-		
+
 		.lqd-stack-button-arrow {
 			transform: translate(-50%, -50%) rotate(180deg);
 			margin-left: -1px;
 		}
 		&:hover {
-			
+
 			.lqd-stack-button-circ-clone {
 				stroke-dashoffset: 166;
 			}
 		}
 	}
 	.lqd-stack-next-button {
-		
+
 		.lqd-stack-button-arrow {
 			margin-left: 1px;
 		}
 		&:hover {
-			
+
 			.lqd-stack-button-circ-clone {
 				stroke-dashoffset: 53.5;
 			}
@@ -515,7 +515,7 @@
 	transition-property: opacity, visibility, color;
 	transition-duration: 0.45s;
 	transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
-	
+
 	span {
 		display: inline-block;
 	}
@@ -534,7 +534,7 @@
 }
 .lqd-stack-page-number-total {
 	font-size: em(11, 20);
-	
+
 	&:before {
 		content: '';
 		display: inline-block;
@@ -550,7 +550,7 @@
 // Effects
 .lqd-stack-row-entering {
 	z-index: 10 !important;
-	
+
 	// fadeScale
 	.lqd-stack-effect-fadeScale.lqd-stack-moving-up & {
 		animation: lqdStackRowFadeScaleEnter 1.2s cubic-bezier(0.23, 1, 0.320, 1) both alternate;
@@ -559,7 +559,7 @@
 	.lqd-stack-effect-fadeScale.lqd-stack-moving-down & {
 		animation: lqdStackRowFadeScaleEnterFromBottom 1.2s cubic-bezier(0.23, 1, 0.320, 1) both alternate;
 	}
-	
+
 	// slideOver
 	.lqd-stack-effect-slideOver.lqd-stack-moving-up & {
 		animation: lqdStackRowSlideOverEnterFromTop 1.2s cubic-bezier(0.23, 1, 0.320, 1) both alternate;
@@ -569,7 +569,7 @@
 	}
 }
 .lqd-stack-row-leaving {
-	
+
 	// fadeScale
 	.lqd-stack-effect-fadeScale.lqd-stack-moving-up & {
 		animation: lqdStackRowFadeScaleLeaveToBottom 1.2s cubic-bezier(0.23, 1, 0.320, 1) both alternate;
@@ -577,7 +577,7 @@
 	.lqd-stack-effect-fadeScale.lqd-stack-moving-down & {
 		animation: lqdStackRowFadeScaleLeave 1.2s cubic-bezier(0.23, 1, 0.320, 1) both alternate;
 	}
-	
+
 	// slideOver
 	.lqd-stack-effect-slideOver.lqd-stack-moving-up & {
 		animation: lqdStackRowSlideOverLeaveToBottom 1.2s cubic-bezier(0.23, 1, 0.320, 1) both alternate;
@@ -600,7 +600,7 @@
 	transition-property: opacity, visibility, color;
 	transition-duration: 0.65s;
 	transition-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
-	
+
 	> * {
 		margin: 0;
 		color: inherit;
@@ -608,16 +608,16 @@
 	a {
 		color: inherit;
 	}
-	
+
 	.pp-enabled & {
 		opacity: 1;
 		visibility: visible;
 	}
 	.social-icon {
-		
+
 		a {
 			transition-property: opacity;
-			
+
 			&:hover {
 				opacity: 0.75;
 			}
@@ -633,7 +633,7 @@
 
 // Body
 .lqd-stack-initiated {
-	
+
 	.main-header:not(.header-side) {
 		position: absolute;
 		top: 0;
@@ -641,7 +641,7 @@
 		right: 0;
 	}
 	&.admin-bar {
-		
+
 		.main-header {
 			top: 32px;
 		}
@@ -652,7 +652,7 @@
 	}
 }
 .lqd-stack-has-nav {
-	
+
 	.lqd-stack-prevnext-button {
 		position: relative;
 		top: auto;
@@ -666,9 +666,9 @@
 		right: 50px;
 		z-index: 10;
 	}
-	
+
 	&.lqd-stack-has-content-bottom-right {
-		
+
 		.lqd-stack-prevnext-wrap {
 			display: flex;
 			flex-direction: column;
@@ -687,30 +687,30 @@
 		.lqd-stack-next-button {
 			margin-top: 5px;
 		}
-		
+
 		&.lqd-stack-buttons-style-1 {
-			
+
 			.lqd-stack-prevnext-button {
 				margin: 0;
 				transform-origin: left center;
 			}
 			.lqd-stack-prev-button {
 				transform: rotate(90deg) translateX(-50%);
-				
+
 				.lqd-stack-button-labbel {
 					transform: rotate(-180deg);
 				}
 			}
 			.lqd-stack-next-button {
 				transform: rotate(90deg) translateX(50%);
-				
+
 				.lqd-stack-button-labbel {
 					transform: rotate(180deg);
 				}
 			}
 		}
 		&.lqd-stack-buttons-style-2 {
-			
+
 			.lqd-stack-prev-button {
 				transform: rotate(90deg);
 			}
@@ -726,16 +726,16 @@
 	#pp-nav a {
 		pointer-events: none;
 	}
-	
+
 	.lqd-stack-page-number-current {
 		animation: lqdStackNumberActive 0.45s cubic-bezier(0.39, 0.575, 0.565, 1) both alternate;
 	}
 	.lqd-stack-page-number-passed {
 		animation: lqdStackNumberPassed 0.45s cubic-bezier(0.39, 0.575, 0.565, 1) both alternate;
 	}
-	
+
 	&.lqd-stack-moving-up {
-		
+
 		.lqd-stack-page-number-current {
 			animation-name: lqdStackNumberActiveUp;
 		}
@@ -746,9 +746,9 @@
 }
 // Color Schemes
 .lqd-stack-active-row-dark {
-	
+
 	#pp-nav {
-		
+
 		a {
 			color: inherit;
 			background-color: rgba(#fff, 0.3);
@@ -761,27 +761,27 @@
 			color: #fff;
 		}
 	}
-	
+
 	.lqd-stack-prevnext-button,
-	.lqd-stack-extra-content,		
+	.lqd-stack-extra-content,
 	.lqd-stack-page-number {
 		color: #fff;
 	}
 }
 .lqd-stack-moving-up {
-	
+
 	#pp-nav li,
 	#pp-nav a {
 		transition-delay: 0.15s;
 	}
 	.lqd-stack-prevnext-button,
-	.lqd-stack-extra-content,		
+	.lqd-stack-extra-content,
 	.lqd-stack-page-number {
 		transition-delay: 0.35s;
 	}
-	
+
 	&.lqd-stack-has-content-bottom-right {
-		
+
 		.lqd-stack-prevnext-button {
 			transition-delay: 0.15s;
 		}
@@ -789,7 +789,7 @@
 }
 // Footer is the active section
 .lqd-stack-footer-active {
-	
+
 	.lqd-stack-page-number,
 	.lqd-stack-extra-content {
 		opacity: 0;

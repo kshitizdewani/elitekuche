@@ -7,6 +7,7 @@ import { HomeSpaceComponent } from './components/home-space/home-space.component
 import { DesignersDeskComponent } from './components/designers-desk/designers-desk.component';
 import { ShowcaseComponent } from './components/showcase/showcase.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ContactComponent } from './components/contact/contact.component';
     HomeSpaceComponent,
     DesignersDeskComponent,
     ShowcaseComponent,
-    ContactComponent
+    ContactComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
