@@ -83,7 +83,7 @@
 		|- 4.4. Text Block
 
 	6. PARTIALS
-		|- 6.1. Search Results 
+		|- 6.1. Search Results
 		|- 6.2. 404 Not Found
 		|- 6.3. Sidebar
 		|- 6.4. Page Frame
@@ -4555,8 +4555,8 @@ body.search .no-results .search-form input[type=submit] { background-color: var(
   .header-side-style-3 .navbar-collapse { margin-bottom: 40px; }
   .header-style-side .titlebar, .header-style-side #content, .header-style-side #wrap > .main-header, .header-style-side .main-footer { -webkit-transition: -webkit-transform 0.45s cubic-bezier(0.7, 0, 0.2, 1); transition: -webkit-transform 0.45s cubic-bezier(0.7, 0, 0.2, 1); transition: transform 0.45s cubic-bezier(0.7, 0, 0.2, 1); transition: transform 0.45s cubic-bezier(0.7, 0, 0.2, 1), -webkit-transform 0.45s cubic-bezier(0.7, 0, 0.2, 1); }
   .side-nav-showing .titlebar, .side-nav-showing #content, .side-nav-showing #wrap > .main-header, .side-nav-showing .main-footer { -webkit-transform: translateX(375px); transform: translateX(375px); }
-  .lqd-stack-initiated .header-side { width: 200px; }
-  .lqd-stack-initiated .header-side .mainbar-wrap { padding: 10vh 45px; }
+  .lqd-stack-initiated .header-side { width: 220px; }
+  .lqd-stack-initiated .header-side .mainbar-wrap { padding: 10vh 25px; }
   .lqd-stack-initiated.header-style-side #wrap { padding-left: 0; }
   .header-fullscreen-style-1 .navbar-fullscreen { width: 100%; height: 100% !important; padding: 10vh 0 15vh; position: fixed; top: 0; left: 0; z-index: 9; opacity: 0; visibility: hidden; background-color: #fff; -webkit-transition: all 0.3s ease; transition: all 0.3s ease; }
   .header-fullscreen-style-1 .navbar-fullscreen .main-nav { display: block; }
