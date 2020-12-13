@@ -8,6 +8,7 @@ import { DesignersDeskComponent } from './components/designers-desk/designers-de
 import { ShowcaseComponent } from './components/showcase/showcase.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { KitchenComponent } from './components/kitchen/kitchen.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     DesignersDeskComponent,
     ShowcaseComponent,
     ContactComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    KitchenComponent
   ],
   imports: [
     BrowserModule,

@@ -4518,7 +4518,7 @@ body.search .no-results .search-form input[type=submit] { background-color: var(
   .lqd-stack-has-prevnext-buttons.lqd-stack-buttons-style-1 .lqd-stack-prevnext-wrap { bottom: 50px !important; left: 20px !important; -webkit-box-pack: justify; justify-content: space-between; }
   #pp-nav { display: none; right: 20px; }
   .lqd-stack-extra { display: none; } }
-@media screen and (min-width: 1200px) { .header-side { width: 375px; height: 100vh; position: fixed; top: 0; left: 0; }
+@media screen and (min-width: 1200px) { .header-side { width: 275px; height: 100vh; position: fixed; top: 0; left: 0; }
   .header-side .mainbar, .header-side .mainbar-container, .header-side .mainbar-row, .header-side .mainbar-wrap { width: 100%; height: 100%; }
   .header-side .mainbar-container { padding: 0; }
   .header-side .mainbar-wrap { padding: 12vh 50px; overflow: hidden; position: relative; }
@@ -7459,7 +7459,7 @@ body.search .no-results .search-form input[type=submit] { background-color: var(
 /* 2. PAGE LAYOUTS
 */
 /* 2.1. Header Side */
-@media screen and (min-width: 1200px) { .header-style-side #wrap { padding-left: 375px; } }
+@media screen and (min-width: 1200px) { .header-style-side #wrap { padding-left: 200px; } }
 @media screen and (min-width: 1200px) and (max-width: 1440px) { .header-style-side #wrap { padding-left: 250px; } }
 @media screen and (min-width: 1200px) and (max-width: 1580px) { .header-style-side .vc_row > .container { width: 100%; padding-left: 15px; padding-right: 15px; }
   .header-style-side.lqd-stack-initiated .vc_row .lqd-stack-section-inner > .container { width: 970px; } }
