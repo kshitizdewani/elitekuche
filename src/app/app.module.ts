@@ -10,6 +10,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { KitchenComponent } from './components/kitchen/kitchen.component';
 import { FormsModule } from '@angular/forms';
+import { WardrobeComponent } from './components/wardrobe/wardrobe.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { FormsModule } from '@angular/forms';
     ShowcaseComponent,
     ContactComponent,
     PageNotFoundComponent,
-    KitchenComponent
+    KitchenComponent,
+    WardrobeComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
