@@ -1,0 +1,82 @@
+//Text Styles
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700");
+$font-sans: 'Open Sans', sans-serif;
+
+//Colors
+$black: #34435E;
+$white: #ffffff;
+$grey: #efefefc5;
+
+// .cont {
+//   font-family: $font-sans;
+//   margin: 0;
+//   padding: 0 4em;
+// }
+
+.timeline {
+  min-width: 300px;
+  max-width: 90ch;
+  margin-left: 0px;
+
+}
+
+.step {
+  font-size: 1em;
+  line-height: 2.00em;
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, $grey 0%, $grey 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  // padding-bottom: 100px;
+  padding: 40px;
+  counter-increment: section;
+  position: relative;
+  color: $black;
+
+  //numbers
+  &:before {
+    content: counter(section);
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 2.25em;
+    width: 2.25em;
+    background-color: #c00024;
+    text-align: center;
+    line-height: 1.25em;
+    color: $white;
+    font-size: 1em;
+  }
+}
+//odd number borders
+.step:nth-child(even) {
+  border-right: 3px solid;
+  padding-left: 0;
+
+  &:before {
+    left: 100%;
+    margin-left: -20px;
+  }
+}
+//even number borders
+.step:nth-child(odd) {
+  border-left: 3px solid;
+  padding-right: 0;
+
+  &:before {
+    right: 100%;
+    margin-right: -20px;
+  }
+}
+//handle first and last
+.step:first-child {
+  padding-top:200px;
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+.step:last-child {
+  padding-bottom: 200px;
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+}
