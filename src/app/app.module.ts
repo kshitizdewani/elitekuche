@@ -12,6 +12,9 @@ import { KitchenComponent } from './components/kitchen/kitchen.component';
 import { FormsModule } from '@angular/forms';
 import { WardrobeComponent } from './components/wardrobe/wardrobe.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TimelineComponent } from './components/timeline/timeline.component';
+
 
 @NgModule({
   declarations: [
@@ -24,12 +27,14 @@ import { FooterComponent } from './components/footer/footer.component';
     PageNotFoundComponent,
     KitchenComponent,
     WardrobeComponent,
-    FooterComponent
+    FooterComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

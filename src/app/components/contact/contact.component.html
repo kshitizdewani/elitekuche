@@ -22,7 +22,7 @@
 
   <main id="content" class="content bg-gray">
 
-    <section class="vc_row">
+    <section class="vc_row" >
       <div class="container">
         <div class="row">
 
@@ -33,8 +33,8 @@
               <div class="lqd-column col-md-6 col-md-offset-1">
 
                 <header class="fancy-title">
-                  <h2>Drop us a line</h2>
-                  <p>We are here to answer any question you may have</p>
+                  <h2>{{formheading}}</h2>
+                  <p>{{subheading}}</p>
                 </header><!-- /.fancy-title -->
 
               </div><!-- /.lqd-column col-md-6 col-md-offset-1 -->
@@ -59,21 +59,23 @@
 
                 <div class="contact-form contact-form-inputs-underlined contact-form-button-circle">
 
-                  <form #enquiryForm="ngForm" novalidate="novalidate" >
+                  <form #enquiryForm="ngForm" (ngSubmit)="formSubmit(enquiryForm);" novalidate="novalidate" id="queryForm" >
                     <div class="row d-flex flex-wrap">
                       <div class="lqd-column col-md-6 mb-20">
-                        <input class="lh-25 mb-30" type="text" #name name="name" ngModel aria-required="true" aria-invalid="false" placeholder="First Name" required>
+                        <input class="lh-25 mb-30" [class.has-error]="name.invalid && name.touched" type="text" #name="ngModel" name="name" ngModel aria-required="true" aria-invalid="false" placeholder="Name" required>
+                        <span class="help-block" *ngIf="name.invalid && name.touched" style="color:red;"><small>fullname required</small></span>
                         <input class="lh-25 mb-30" type="email" name="email" ngModel aria-required="true" aria-invalid="false" placeholder="Your email address" required>
-                        <input class="lh-25 mb-30" type="tel" name="mobile" ngModel aria-required="true" aria-invalid="false" placeholder="Mobile no" required>
+                        <input class="lh-25 mb-30" type="tel" name="phone" ngModel aria-required="true" aria-invalid="false" placeholder="Mobile no" required>
+
                       </div><!-- /.col-md-6 -->
                       <div class="lqd-column col-md-6 mb-20">
-                        <textarea cols="10" rows="6" name="message" aria-required="true" aria-invalid="false" placeholder="Message" required></textarea>
+                        <textarea cols="10" rows="6" name="message" ngModel aria-required="true" aria-invalid="false" placeholder="Message" required></textarea>
                       </div><!-- /.col-md-12 -->
                       <div class="lqd-column col-md-6">
                         <p class="font-size-16 opacity-07"><em>We all know how important your information is. They are always safe with us.</em></p>
                       </div><!-- /.col-md-6 -->
                       <div class="lqd-column col-md-6 text-md-right">
-                        <input type="submit" (click)="onSubmit(enquiryForm.value);" value="Send message" class="font-size-13 ltr-sp-1 font-weight-bold">
+                        <input type="submit" value="Send message" class="font-size-13 ltr-sp-1 font-weight-bold">
                       </div><!-- /.col-md-6 -->
                     </div><!-- /.row -->
                   </form>

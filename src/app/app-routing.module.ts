@@ -8,16 +8,17 @@ import {ContactComponent} from './components/contact/contact.component';
 import {PageNotFoundComponent} from './components/page-not-found/page-not-found.component';
 import {KitchenComponent} from './components/kitchen/kitchen.component';
 import { WardrobeComponent } from './components/wardrobe/wardrobe.component';
+import { TimelineComponent } from './components/timeline/timeline.component';
 
 const routes: Routes = [
   { path: 'home', component:  HomeComponent},
   { path: 'home-space', component:  HomeSpaceComponent},
   { path: 'designers-desk', component: DesignersDeskComponent},
   { path: 'showcase', component: ShowcaseComponent},
-  {path:  'contact',  component: ContactComponent},
-  {path: 'kitchens', component: KitchenComponent},
-  {path: 'wardrobes', component: WardrobeComponent},
-
+  { path:  'contact',  component: ContactComponent},
+  { path: 'kitchens', component: KitchenComponent},
+  { path: 'wardrobes', component: WardrobeComponent},
+  { path: 'steps', component: TimelineComponent},
   { path: '',   redirectTo: '/home', pathMatch: 'full' }, // redirect to `home`
   { path: '**', component: PageNotFoundComponent },  // Wildcard route for a 404 page
 
