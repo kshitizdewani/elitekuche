@@ -23,7 +23,8 @@ export class ContactComponent implements OnInit {
 
   formSubmit(x: NgForm): void{
     // sending mail
-    this.mail
+    if(x.valid){
+      this.mail
     .postQuery({
         name: x.value.name,
         email: x.value.email,
@@ -35,11 +36,10 @@ export class ContactComponent implements OnInit {
     // hiding the form element
     console.log(document.getElementById("queryForm"));
     this.f = document.getElementById('queryForm');
-    // if(this.f.style==="none"){
-
-    // }
     this.f.style.display = "none";
     this.formheading = "Message sent";
     this.subheading = "Now leave the rest upon us. We shall contact you very soon."
+    }
+
   }
 }
